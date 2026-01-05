@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task on My Day Off</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* JUDUL */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* WRAPPER BIAR TENGAH */
+        .wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* VIDEO */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 14px;
+            background: black;
+        }
+
+        /* FOTO */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 18px;
+            background: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Daily life video</h1>
+
+    <div class="wrapper">
+        <div class="video-grid">
+            <video controls src="video1.mp4"></video>
+            <video controls src="video2.mp4"></video>
+            <video controls src="video3.mp4"></video>
+            <video controls src="video4.mp4"></video>
+
+        </div>
+
+        <h1>Photo Gallery</h1>
+
+        <div class="photo-grid">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
